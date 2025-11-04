@@ -62,7 +62,6 @@ public class QuerySpecificationBuilder<T> {
             case IS_NOT_NULL -> cb.isNotNull(path);
             case TRUE -> cb.isTrue(path.as(Boolean.class));
             case FALSE -> cb.isFalse(path.as(Boolean.class));
-            default -> null;
         };  
         // Add more operators as needed
     }
@@ -75,5 +74,4 @@ public class QuerySpecificationBuilder<T> {
             return value;
         }
     }
-
 }

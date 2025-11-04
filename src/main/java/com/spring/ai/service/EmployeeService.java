@@ -28,6 +28,7 @@ import org.springframework.stereotype.Service;
 import com.spring.ai.dto.EmployeePageRes;
 import com.spring.ai.dto.QueryRequest;
 import com.spring.ai.model.Employee;
+import com.spring.ai.model.Employee_;
 import com.spring.ai.repository.EmployeeRepository;
 import com.spring.ai.utils.QuerySpecificationBuilder;
 
@@ -46,23 +47,15 @@ public class EmployeeService {
     private final EmployeeRepository employeeRepository;
 
     @Tool(description = "Find Page of employees with filtering options")
-    public EmployeePageRes findAllFilteredEmployees(@ToolParam(description = "Filtering options for employee search") QueryRequest<Employee> option) {
+    public Page<Employee> findAllFilteredEmployees(@ToolParam(description = "Filtering options for employee search") QueryRequest<Employee> option) {
 
     Pageable pageable = PageRequest.of(option.getPage(), option.getLimit());
 
-    log.info("Finding all filtered employees with options: {}", option);
-
     Specification<Employee> spec = builder.build(option.getWhere());
 
-    Page<Employee> employeePage = employeeRepository.findAll(spec, pageable);
+    return employeeRepository.findAll(spec, pageable);
 
-    return EmployeePageRes.builder()
-            .employees(employeePage.getContent())
-            .totalPages(employeePage.getTotalPages())
-            .totalElements(employeePage.getTotalElements())
-            .page(option.getPage())
-            .limit(option.getLimit())
-            .build();
+
 }
 
 @Tool(description ="Find Employee by ID")
