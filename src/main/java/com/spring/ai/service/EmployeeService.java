@@ -28,7 +28,6 @@ import org.springframework.stereotype.Service;
 import com.spring.ai.dto.EmployeeFilter;
 import com.spring.ai.dto.EmployeePageRes;
 import com.spring.ai.model.Employee;
-import com.spring.ai.model.EmployeeSpecification;
 import com.spring.ai.repository.EmployeeRepository;
 
 import lombok.RequiredArgsConstructor;
@@ -50,36 +49,6 @@ private final EmployeeRepository employeeRepository;
     
     Specification<Employee> spec = Specification.where(null);
 
-
-    if (option.getEmployeeId() != null) {
-        spec = spec.and(EmployeeSpecification.hasEmployeeId(option.getEmployeeId()));
-    }
-
-    if (option.getFirstName() != null) {
-        spec = spec.and(EmployeeSpecification.hasFirstName(option.getFirstName()));
-    }
-
-    if (option.getLastName() != null) {
-        spec = spec.and(EmployeeSpecification.hasLastName(option.getLastName())); 
-    }
-    if (option.getEmail() != null) {
-        spec = spec.and(EmployeeSpecification.hasEmail(option.getEmail()));
-    }
-    if (option.getPhone() != null) {
-        spec = spec.and(EmployeeSpecification.hasPhone(option.getPhone()));
-    }
-    if (option.getHireDateFrom() != null || option.getHireDateTo() != null) {
-        spec = spec.and(EmployeeSpecification.hireDateBetween(option.getHireDateFrom(), option.getHireDateTo()));
-    }   
-    if (option.getManagerId() != null) {
-        spec = spec.and(EmployeeSpecification.hasManagerId(option.getManagerId()));
-    }   
-    if (option.getJobTitle() != null) { 
-        spec = spec.and(EmployeeSpecification.hasJobTitle(option.getJobTitle()));
-    }   
-    if (option.getMinSalary() != null || option.getMaxSalary() != null) {
-        spec = spec.and(EmployeeSpecification.salaryBetween(option.getMinSalary(), option.getMaxSalary()));
-    } 
     Page<Employee> employeePage = employeeRepository.findAll(spec, pageable);
 
     return EmployeePageRes.builder()
