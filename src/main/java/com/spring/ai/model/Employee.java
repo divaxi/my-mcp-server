@@ -1,6 +1,9 @@
 package com.spring.ai.model;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -14,35 +17,40 @@ import lombok.Setter;
 @Table(name = "EMPLOYEES")
 public class Employee {
 
-  @Id
-  @Column(name = "EMPLOYEE_ID", nullable = false)
-  private Long employeeId;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "EMPLOYEE_ID", nullable = false)
+    private Long employeeId;
 
-  @Column(name = "FIRST_NAME", length = 50, nullable = false)
-  private String firstName;
+    @Column(name = "FIRST_NAME", length = 50, nullable = false)
+    private String firstName;
 
-  @Column(name = "LAST_NAME", length = 50, nullable = false)
-  private String lastName;
+    @Column(name = "LAST_NAME", length = 50, nullable = false)
+    private String lastName;
 
-  @Column(name = "EMAIL", length = 100, nullable = false)
-  private String email;
+    @Column(name = "EMAIL", length = 100, nullable = false, unique = true)
+    private String email;
 
-  @Column(name = "PHONE", length = 20, nullable = false)
-  private String phone;
+    @Column(name = "HIRE_DATE", nullable = false)
+    private LocalDate hireDate;
 
-  @Temporal(TemporalType.DATE)
-  @Column(name = "HIRE_DATE", nullable = false)
-  private LocalDate hireDate;
+    // ✅ Self-reference: Employee - Manager
+    @ManyToOne
+    @JoinColumn(name = "MANAGER_ID", referencedColumnName = "EMPLOYEE_ID",
+            foreignKey = @ForeignKey(name = "FK_EMPLOYEE_MANAGER"))
+    private Employee manager;
 
-  @Column(name = "MANAGER_ID")
-  private Long managerId;
+    // ✅ Quan hệ tới Department
+    @ManyToOne
+    @JoinColumn(name = "DEPARTMENT_ID", referencedColumnName = "DEPARTMENT_ID",
+            foreignKey = @ForeignKey(name = "FK_EMPLOYEE_DEPARTMENT"))
+    private Department department;
 
-  @Column(name = "JOB_TITLE", length = 100, nullable = false)
-  private String jobTitle;
+    @Column(name = "SALARY")
+    private Double salary;
 
-  @Column(name = "SALARY")
-  private Double salary;
-
+    // ✅ Quan hệ ngược tới bảng EmployeeProject
+    @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<EmployeeProject> employeeProjects = new ArrayList<>();
 }
-
 
