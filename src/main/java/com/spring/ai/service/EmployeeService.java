@@ -43,7 +43,7 @@ private final EmployeeRepository employeeRepository;
     @Tool(description = "Find Page of employees with filtering options")
     public EmployeePageRes findAllFilteredEmployees(@ToolParam(description = "Filtering options for employee search") EmployeeFilter option) {
 
-    Pageable pageable = PageRequest.of(option.getPage(), option.getLimit());
+    Pageable pageable = PageRequest.of(0, 5);
 
     log.info("Finding all filtered employees with options: {}", option);
     

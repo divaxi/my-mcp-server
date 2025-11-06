@@ -1,0 +1,25 @@
+package com.spring.ai.controller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.spring.ai.dto.EmployeePageRes;
+import com.spring.ai.service.EmployeeService;
+
+import lombok.RequiredArgsConstructor;
+
+@RequestMapping("/employee")
+@RestController
+@RequiredArgsConstructor
+public class EmployeeController {
+
+    private final EmployeeService employeeService;
+
+    @GetMapping("")
+    public ResponseEntity<EmployeePageRes> findAll(){
+        return ResponseEntity.ok(employeeService.findAllFilteredEmployees(null));
+    }
+    
+}

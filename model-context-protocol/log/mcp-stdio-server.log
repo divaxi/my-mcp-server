@@ -11047,3 +11047,954 @@ Caused by: java.lang.IllegalArgumentException: scale has no meaning for SQL floa
 2025-11-06 17:16:37.910 INFO  [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-11-06 17:16:37.914 INFO  [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-11-06 17:16:37.922 INFO  [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-06 17:20:31.415 INFO  [background-preinit] Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-06 17:20:31.474 INFO  [restartedMain] McpApplication - Starting McpApplication using Java 21.0.8 with PID 40544 (/home/dryleaf/mcp-server/target/classes started by dryleaf in /home/dryleaf/mcp-server)
+2025-11-06 17:20:31.477 INFO  [restartedMain] McpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-06 17:20:31.544 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-06 17:20:31.544 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-06 17:20:32.087 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-06 17:20:32.192 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 97 ms. Found 1 JPA repository interface.
+2025-11-06 17:20:32.520 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-06 17:20:32.557 INFO  [restartedMain] Version - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-06 17:20:32.581 INFO  [restartedMain] RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-06 17:20:32.796 INFO  [restartedMain] SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-06 17:20:32.820 INFO  [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+2025-11-06 17:20:32.939 INFO  [restartedMain] HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3fb0d96
+2025-11-06 17:20:32.941 INFO  [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+2025-11-06 17:20:32.964 WARN  [restartedMain] deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-06 17:20:32.981 INFO  [restartedMain] pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-06 17:20:33.264 WARN  [restartedMain] RootClass - HHH000038: Composite-id class does not override equals(): com.spring.ai.model.EmployeeProjectId
+2025-11-06 17:20:33.264 WARN  [restartedMain] RootClass - HHH000039: Composite-id class does not override hashCode(): com.spring.ai.model.EmployeeProjectId
+2025-11-06 17:20:33.753 INFO  [restartedMain] JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-06 17:20:33.831 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 17:20:34.167 INFO  [restartedMain] McpServerAutoConfiguration - Enable tools capabilities, notification: true
+2025-11-06 17:20:34.220 INFO  [restartedMain] McpServerAutoConfiguration - Registered tools: 3
+2025-11-06 17:20:34.220 INFO  [restartedMain] McpServerAutoConfiguration - Enable resources capabilities, notification: true
+2025-11-06 17:20:34.220 INFO  [restartedMain] McpServerAutoConfiguration - Enable prompts capabilities, notification: true
+2025-11-06 17:20:34.221 INFO  [restartedMain] McpServerAutoConfiguration - Enable completions capabilities
+2025-11-06 17:20:34.368 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-06 17:20:34.383 INFO  [restartedMain] McpApplication - Started McpApplication in 3.267 seconds (process running for 3.87)
+2025-11-06 17:21:08.954 INFO  [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 17:21:08.957 INFO  [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-06 17:21:08.961 INFO  [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-06 17:21:20.098 INFO  [main] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.spring.ai.McpServerApplicationTests]: McpServerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-06 17:21:20.278 INFO  [main] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.spring.ai.McpApplication for test class com.spring.ai.McpServerApplicationTests
+2025-11-06 17:21:20.541 INFO  [main] RestartApplicationListener - Restart disabled due to context in which it is running
+2025-11-06 17:21:20.965 INFO  [background-preinit] Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-06 17:21:21.055 INFO  [main] McpServerApplicationTests - Starting McpServerApplicationTests using Java 21.0.8 with PID 40877 (started by dryleaf in /home/dryleaf/mcp-server)
+2025-11-06 17:21:21.060 INFO  [main] McpServerApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-11-06 17:21:21.694 INFO  [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-06 17:21:21.845 INFO  [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 141 ms. Found 1 JPA repository interface.
+2025-11-06 17:21:22.424 INFO  [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-06 17:21:22.482 INFO  [main] Version - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-06 17:21:22.540 INFO  [main] RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-06 17:21:22.858 INFO  [main] SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-06 17:21:22.916 INFO  [main] HikariDataSource - HikariPool-1 - Starting...
+2025-11-06 17:21:23.135 INFO  [main] HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@19f497aa
+2025-11-06 17:21:23.137 INFO  [main] HikariDataSource - HikariPool-1 - Start completed.
+2025-11-06 17:21:23.167 WARN  [main] deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-06 17:21:23.187 INFO  [main] pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-06 17:21:23.633 WARN  [main] RootClass - HHH000038: Composite-id class does not override equals(): com.spring.ai.model.EmployeeProjectId
+2025-11-06 17:21:23.633 WARN  [main] RootClass - HHH000039: Composite-id class does not override hashCode(): com.spring.ai.model.EmployeeProjectId
+2025-11-06 17:21:24.330 INFO  [main] JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-06 17:21:24.412 INFO  [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 17:21:24.951 INFO  [main] McpServerAutoConfiguration - Enable tools capabilities, notification: true
+2025-11-06 17:21:25.042 INFO  [main] McpServerAutoConfiguration - Registered tools: 3
+2025-11-06 17:21:25.043 INFO  [main] McpServerAutoConfiguration - Enable resources capabilities, notification: true
+2025-11-06 17:21:25.044 INFO  [main] McpServerAutoConfiguration - Enable prompts capabilities, notification: true
+2025-11-06 17:21:25.045 INFO  [main] McpServerAutoConfiguration - Enable completions capabilities
+2025-11-06 17:21:25.255 INFO  [main] McpServerApplicationTests - Started McpServerApplicationTests in 4.761 seconds (process running for 6.354)
+2025-11-06 17:21:25.775 INFO  [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 17:21:25.778 INFO  [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-06 17:21:25.798 INFO  [SpringApplicationShutdownHook] HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-06 17:21:38.770 INFO  [background-preinit] Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-11-06 17:21:38.824 INFO  [restartedMain] McpApplication - Starting McpApplication using Java 21.0.8 with PID 41220 (/home/dryleaf/mcp-server/target/classes started by dryleaf in /home/dryleaf/mcp-server)
+2025-11-06 17:21:38.828 INFO  [restartedMain] McpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-06 17:21:38.894 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-06 17:21:38.894 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-06 17:21:39.558 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-06 17:21:39.670 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 104 ms. Found 1 JPA repository interface.
+2025-11-06 17:21:40.008 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-06 17:21:40.049 INFO  [restartedMain] Version - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-06 17:21:40.075 INFO  [restartedMain] RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-06 17:21:40.293 INFO  [restartedMain] SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-06 17:21:40.317 INFO  [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+2025-11-06 17:21:40.431 INFO  [restartedMain] HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7ce81993
+2025-11-06 17:21:40.432 INFO  [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+2025-11-06 17:21:40.461 WARN  [restartedMain] deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-06 17:21:40.484 INFO  [restartedMain] pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-06 17:21:40.809 WARN  [restartedMain] RootClass - HHH000038: Composite-id class does not override equals(): com.spring.ai.model.EmployeeProjectId
+2025-11-06 17:21:40.809 WARN  [restartedMain] RootClass - HHH000039: Composite-id class does not override hashCode(): com.spring.ai.model.EmployeeProjectId
+2025-11-06 17:21:41.406 INFO  [restartedMain] JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-06 17:21:41.481 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 17:21:41.855 INFO  [restartedMain] McpServerAutoConfiguration - Enable tools capabilities, notification: true
+2025-11-06 17:21:41.912 INFO  [restartedMain] McpServerAutoConfiguration - Registered tools: 3
+2025-11-06 17:21:41.913 INFO  [restartedMain] McpServerAutoConfiguration - Enable resources capabilities, notification: true
+2025-11-06 17:21:41.913 INFO  [restartedMain] McpServerAutoConfiguration - Enable prompts capabilities, notification: true
+2025-11-06 17:21:41.913 INFO  [restartedMain] McpServerAutoConfiguration - Enable completions capabilities
+2025-11-06 17:21:42.074 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-06 17:21:42.101 INFO  [restartedMain] McpApplication - Started McpApplication in 3.63 seconds (process running for 4.262)
+2025-11-06 17:22:01.514 INFO  [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 6 class path changes (0 additions, 0 deletions, 6 modifications)
+2025-11-06 17:22:01.526 INFO  [Thread-5] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 17:22:01.529 INFO  [Thread-5] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-06 17:22:01.533 INFO  [Thread-5] HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-06 17:22:01.624 INFO  [restartedMain] McpApplication - Starting McpApplication using Java 21.0.8 with PID 41220 (/home/dryleaf/mcp-server/target/classes started by dryleaf in /home/dryleaf/mcp-server)
+2025-11-06 17:22:01.624 INFO  [restartedMain] McpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-06 17:22:01.925 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-06 17:22:01.934 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-11-06 17:22:02.216 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-06 17:22:02.228 INFO  [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:22:02.229 INFO  [restartedMain] StandardService - Starting service [Tomcat]
+2025-11-06 17:22:02.229 INFO  [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-06 17:22:02.257 INFO  [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+2025-11-06 17:22:02.258 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 630 ms
+2025-11-06 17:22:02.322 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-06 17:22:02.324 INFO  [restartedMain] RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-06 17:22:02.329 INFO  [restartedMain] SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-06 17:22:02.330 INFO  [restartedMain] HikariDataSource - HikariPool-2 - Starting...
+2025-11-06 17:22:02.350 INFO  [restartedMain] HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@a5b16f8
+2025-11-06 17:22:02.350 INFO  [restartedMain] HikariDataSource - HikariPool-2 - Start completed.
+2025-11-06 17:22:02.353 WARN  [restartedMain] deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-06 17:22:02.354 INFO  [restartedMain] pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-06 17:22:02.382 WARN  [restartedMain] RootClass - HHH000038: Composite-id class does not override equals(): com.spring.ai.model.EmployeeProjectId
+2025-11-06 17:22:02.383 WARN  [restartedMain] RootClass - HHH000039: Composite-id class does not override hashCode(): com.spring.ai.model.EmployeeProjectId
+2025-11-06 17:22:02.440 INFO  [restartedMain] JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-06 17:22:02.492 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 17:22:02.651 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-06 17:22:02.925 INFO  [restartedMain] McpServerAutoConfiguration - Enable tools capabilities, notification: true
+2025-11-06 17:22:02.940 INFO  [restartedMain] McpServerAutoConfiguration - Registered tools: 3
+2025-11-06 17:22:02.940 INFO  [restartedMain] McpServerAutoConfiguration - Enable resources capabilities, notification: true
+2025-11-06 17:22:02.940 INFO  [restartedMain] McpServerAutoConfiguration - Enable prompts capabilities, notification: true
+2025-11-06 17:22:02.940 INFO  [restartedMain] McpServerAutoConfiguration - Enable completions capabilities
+2025-11-06 17:22:02.964 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-06 17:22:02.972 INFO  [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:22:02.984 INFO  [restartedMain] TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-06 17:22:02.989 INFO  [restartedMain] McpApplication - Started McpApplication in 1.398 seconds (process running for 25.15)
+2025-11-06 17:22:02.994 INFO  [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   DispatcherServletAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletConfiguration matched:
+      - @ConditionalOnClass found required class 'jakarta.servlet.ServletRegistration' (OnClassCondition)
+      - Default DispatcherServlet did not find dispatcher servlet beans (DispatcherServletAutoConfiguration.DefaultDispatcherServletCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration matched:
+      - @ConditionalOnClass found required class 'jakarta.servlet.ServletRegistration' (OnClassCondition)
+      - DispatcherServlet Registration did not find servlet registration bean (DispatcherServletAutoConfiguration.DispatcherServletRegistrationCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration#dispatcherServletRegistration matched:
+      - @ConditionalOnBean (names: dispatcherServlet types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) found bean 'dispatcherServlet' (OnBeanCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration matched:
+      - @ConditionalOnWebApplication (required) found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnWarDeployment the application is not deployed as a WAR file. (OnWarDeploymentCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.TomcatWebServerFactoryCustomizerConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.apache.catalina.startup.Tomcat', 'org.apache.coyote.UpgradeProtocol' (OnClassCondition)
+
+   ErrorMvcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   ErrorMvcAutoConfiguration#basicErrorController matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorController; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration#errorAttributes matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorAttributes; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration.DefaultErrorViewResolverConfiguration#conventionErrorViewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) found bean 'dispatcherServlet'; @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.web.servlet.error.ErrorViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration matched:
+      - @ConditionalOnBooleanProperty (server.error.whitelabel.enabled=true) matched (OnPropertyCondition)
+      - ErrorTemplate Missing did not find error template view (ErrorMvcAutoConfiguration.ErrorTemplateMissingCondition)
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration#beanNameViewResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.BeanNameViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration#defaultErrorView matched:
+      - @ConditionalOnMissingBean (names: error; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpEncodingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.filter.CharacterEncodingFilter' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnBooleanProperty (server.servlet.encoding.enabled=true) matched (OnPropertyCondition)
+
+   HttpEncodingAutoConfiguration#characterEncodingFilter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.CharacterEncodingFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration.JpaWebConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnBooleanProperty (spring.jpa.open-in-view=true) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor,org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MultipartAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'org.springframework.web.multipart.support.StandardServletMultipartResolver', 'jakarta.servlet.MultipartConfigElement' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnBooleanProperty (spring.servlet.multipart.enabled=true) matched (OnPropertyCondition)
+
+   MultipartAutoConfiguration#multipartConfigElement matched:
+      - @ConditionalOnMissingBean (types: jakarta.servlet.MultipartConfigElement; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MultipartAutoConfiguration#multipartResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.multipart.MultipartResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ServletWebServerFactoryAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'jakarta.servlet.ServletRequest' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   ServletWebServerFactoryAutoConfiguration.TomcatConfiguration matched:
+      - @ConditionalOnClass found required class 'org.apache.catalina.startup.Tomcat' (OnClassCondition)
+
+   ServletWebServerFactoryConfiguration.EmbeddedTomcat matched:
+      - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'org.apache.catalina.startup.Tomcat', 'org.apache.coyote.UpgradeProtocol' (OnClassCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.server.ServletWebServerFactory; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   SpringDataWebAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.data.web.PageableHandlerMethodArgumentResolver', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.data.web.PageableHandlerMethodArgumentResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDataWebAutoConfiguration#pageableCustomizer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.data.web.config.PageableHandlerMethodArgumentResolverCustomizer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDataWebAutoConfiguration#sortCustomizer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.data.web.config.SortHandlerMethodArgumentResolverCustomizer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDataWebAutoConfiguration#springDataWebSettings matched:
+      - @ConditionalOnMissingBean (types: org.springframework.data.web.config.SpringDataWebSettings; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfigProperties matched:
+      - @ConditionalOnProperty (springdoc.api-docs.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: org.springdoc.core.configuration.SpringDocConfiguration; SearchStrategy: all) found bean 'org.springdoc.core.configuration.SpringDocConfiguration' (OnBeanCondition)
+
+   SpringDocConfiguration matched:
+      - @ConditionalOnWebApplication (required) found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnProperty (springdoc.api-docs.enabled) matched (OnPropertyCondition)
+
+   SpringDocConfiguration#fileSupportConverter matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.converters.FileSupportConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#globalOpenApiCustomizer matched:
+      - @ConditionalOnMissingBean (names: globalOpenApiCustomizer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#initExtraSchemas matched:
+      - @ConditionalOnProperty (springdoc.enable-extra-schemas) matched (OnPropertyCondition)
+
+   SpringDocConfiguration#methodParameterPojoExtractor matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.extractor.MethodParameterPojoExtractor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#openAPIBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.service.OpenAPIService; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#operationBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.service.OperationService; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#parameterBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.service.GenericParameterService; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#parameterObjectNamingStrategyCustomizer matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.customizers.ParameterObjectNamingStrategyCustomizer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#polymorphicModelConverter matched:
+      - @ConditionalOnProperty (springdoc.model-converters.polymorphic-converter.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springdoc.core.converters.PolymorphicModelConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#requestBodyBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.service.RequestBodyService; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#responseSupportConverter matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.converters.ResponseSupportConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#schemaPropertyDeprecatingConverter matched:
+      - @ConditionalOnProperty (springdoc.model-converters.deprecating-converter.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springdoc.core.converters.SchemaPropertyDeprecatingConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#schemaUtils matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.utils.SchemaUtils; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#securityParser matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.service.SecurityService; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#springDocCustomizers matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.customizers.SpringDocCustomizers; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#springDocProviders matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.providers.SpringDocProviders; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration#springdocObjectMapperProvider matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.providers.ObjectMapperProvider; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration.QuerydslProvider matched:
+      - @ConditionalOnClass found required class 'org.springframework.data.querydsl.binding.QuerydslBindingsFactory' (OnClassCondition)
+
+   SpringDocConfiguration.QuerydslProvider#queryDslQuerydslPredicateOperationCustomizer matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.customizers.QuerydslPredicateOperationCustomizer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration.SpringDocSpringDataWebPropertiesProvider matched:
+      - @ConditionalOnClass found required class 'org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties' (OnClassCondition)
+
+   SpringDocConfiguration.SpringDocSpringDataWebPropertiesProvider#springDataWebPropertiesProvider matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.providers.SpringDataWebPropertiesProvider; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration.SpringDocWebFluxSupportConfiguration matched:
+      - @ConditionalOnClass found required class 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   SpringDocConfiguration.SpringDocWebFluxSupportConfiguration#webFluxSupportConverter matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.converters.WebFluxSupportConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocConfiguration.WebConversionServiceConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.boot.autoconfigure.web.format.WebConversionService' (OnClassCondition)
+
+   SpringDocPageableConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.data.domain.Pageable' (OnClassCondition)
+      - @ConditionalOnWebApplication (required) found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnProperty (springdoc.api-docs.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: org.springdoc.core.configuration.SpringDocConfiguration; SearchStrategy: all) found bean 'org.springdoc.core.configuration.SpringDocConfiguration' (OnBeanCondition)
+
+   SpringDocPageableConfiguration#dataRestDelegatingMethodParameterCustomizer matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.customizers.DataRestDelegatingMethodParameterCustomizer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocPageableConfiguration#pageOpenAPIConverter matched:
+      - @ConditionalOnClass found required classes 'org.springframework.data.web.PagedModel', 'org.springframework.data.web.config.SpringDataWebSettings' (OnClassCondition)
+      - @ConditionalOnMissingBean (types: org.springdoc.core.converters.PageOpenAPIConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocPageableConfiguration#pageableOpenAPIConverter matched:
+      - @ConditionalOnProperty (springdoc.model-converters.pageable-converter.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springdoc.core.converters.PageableOpenAPIConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocSortConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.data.domain.Sort' (OnClassCondition)
+      - @ConditionalOnWebApplication (required) found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnProperty (springdoc.api-docs.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: org.springdoc.core.configuration.SpringDocConfiguration; SearchStrategy: all) found bean 'org.springdoc.core.configuration.SpringDocConfiguration' (OnBeanCondition)
+
+   SpringDocSortConfiguration#sortOpenAPIConverter matched:
+      - @ConditionalOnProperty (springdoc.sort-converter.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springdoc.core.converters.SortOpenAPIConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocWebMvcConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnProperty (springdoc.api-docs.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: org.springdoc.core.configuration.SpringDocConfiguration; SearchStrategy: all) found bean 'org.springdoc.core.configuration.SpringDocConfiguration' (OnBeanCondition)
+
+   SpringDocWebMvcConfiguration#openApiResource matched:
+      - @ConditionalOnExpression (#{(${springdoc.use-management-port:false} == false ) and ${springdoc.enable-default-api-docs:true}}) resulted in true (OnExpressionCondition)
+      - @ConditionalOnMissingBean (types: org.springdoc.webmvc.api.OpenApiWebMvcResource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocWebMvcConfiguration#requestBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.webmvc.core.service.RequestService; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocWebMvcConfiguration#responseBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.service.GenericResponseService; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocWebMvcConfiguration#springWebProvider matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.core.providers.SpringWebProvider; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDocWebMvcConfiguration.SpringDocWebMvcRouterConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.servlet.function.RouterFunction' (OnClassCondition)
+
+   SpringDocWebMvcConfiguration.SpringDocWebMvcRouterConfiguration#routerFunctionProvider matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.webmvc.core.providers.RouterFunctionWebMvcProvider; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SwaggerConfig matched:
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnProperty (springdoc.swagger-ui.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: org.springdoc.core.configuration.SpringDocConfiguration; SearchStrategy: all) found bean 'org.springdoc.core.configuration.SpringDocConfiguration' (OnBeanCondition)
+
+   SwaggerConfig#indexPageTransformer matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.webmvc.ui.SwaggerIndexTransformer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SwaggerConfig#swaggerConfigResource matched:
+      - @ConditionalOnProperty (springdoc.use-management-port=false) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springdoc.webmvc.ui.SwaggerConfigResource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SwaggerConfig#swaggerResourceResolver matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.webmvc.ui.SwaggerResourceResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SwaggerConfig#swaggerWebMvcConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springdoc.webmvc.ui.SwaggerWebMvcConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SwaggerConfig#swaggerWelcome matched:
+      - @ConditionalOnProperty (springdoc.use-management-port=false) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SwaggerUiConfigProperties matched:
+      - @ConditionalOnProperty (springdoc.swagger-ui.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: org.springdoc.core.configuration.SpringDocConfiguration; SearchStrategy: all) found bean 'org.springdoc.core.configuration.SpringDocConfiguration' (OnBeanCondition)
+
+   SwaggerUiOAuthProperties matched:
+      - @ConditionalOnProperty (springdoc.swagger-ui.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: org.springdoc.core.configuration.SpringDocConfiguration; SearchStrategy: all) found bean 'org.springdoc.core.configuration.SpringDocConfiguration' (OnBeanCondition)
+
+   WebMvcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration#formContentFilter matched:
+      - @ConditionalOnBooleanProperty (spring.mvc.formcontent.filter.enabled=true) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.FormContentFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#flashMapManager matched:
+      - @ConditionalOnMissingBean (names: flashMapManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#localeResolver matched:
+      - @ConditionalOnMissingBean (names: localeResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#themeResolver matched:
+      - @ConditionalOnMissingBean (names: themeResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#viewNameTranslator matched:
+      - @ConditionalOnMissingBean (names: viewNameTranslator; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.ResourceChainCustomizerConfiguration matched:
+      - @ConditionalOnEnabledResourceChain found class org.webjars.WebJarVersionLocator (OnEnabledResourceChainCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#defaultViewResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.InternalResourceViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#requestContextFilter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.context.request.RequestContextListener,org.springframework.web.filter.RequestContextFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#viewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.ViewResolver; SearchStrategy: all) found beans 'defaultViewResolver', 'beanNameViewResolver', 'mvcViewResolver'; @ConditionalOnMissingBean (names: viewResolver types: org.springframework.web.servlet.view.ContentNegotiatingViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebSocketServletAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'jakarta.websocket.server.ServerContainer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   WebSocketServletAutoConfiguration.TomcatWebSocketConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.apache.catalina.startup.Tomcat', 'org.apache.tomcat.websocket.server.WsSci' (OnClassCondition)
+
+   WebSocketServletAutoConfiguration.TomcatWebSocketConfiguration#websocketServletWebServerCustomizer matched:
+      - @ConditionalOnMissingBean (names: websocketServletWebServerCustomizer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   DispatcherServletAutoConfiguration.DispatcherServletConfiguration#multipartResolver:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.web.multipart.MultipartResolver; SearchStrategy: all) did not find any beans of type org.springframework.web.multipart.MultipartResolver (OnBeanCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.JettyWebServerFactoryCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.eclipse.jetty.server.Server', 'org.eclipse.jetty.util.Loader', 'org.eclipse.jetty.ee10.webapp.WebAppContext' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.NettyWebServerFactoryCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.netty.http.server.HttpServer' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.TomcatWebServerFactoryCustomizerConfiguration#tomcatVirtualThreadsProtocolHandlerCustomizer:
+      Did not match:
+         - @ConditionalOnThreading did not find VIRTUAL (OnThreadingCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.UndertowWebServerFactoryCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'io.undertow.Undertow', 'org.xnio.SslClientAuthMode' (OnClassCondition)
+
+   MultipleOpenApiSupportConfiguration.SpringDocWebMvcActuatorDifferentConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping' (OnClassCondition)
+         - Ancestor org.springdoc.webmvc.core.configuration.MultipleOpenApiSupportConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+
+   ServletWebServerFactoryAutoConfiguration.ForwardedHeaderFilterConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (server.forward-headers-strategy=framework) did not find property 'server.forward-headers-strategy' (OnPropertyCondition)
+
+   ServletWebServerFactoryConfiguration.EmbeddedJetty:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.eclipse.jetty.server.Server', 'org.eclipse.jetty.util.Loader', 'org.eclipse.jetty.ee10.webapp.WebAppContext' (OnClassCondition)
+
+   ServletWebServerFactoryConfiguration.EmbeddedUndertow:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'io.undertow.Undertow', 'org.xnio.SslClientAuthMode' (OnClassCondition)
+
+   SpringDocConfiguration#oas31ModelConverter:
+      Did not match:
+         - @ConditionalOnProperty (springdoc.explicit-object-schema=true) did not find property 'springdoc.explicit-object-schema' (OnPropertyCondition)
+
+   SpringDocConfiguration#propertiesResolverForSchema:
+      Did not match:
+         - @ConditionalOnProperty (springdoc.api-docs.resolve-schema-properties) did not find property 'springdoc.api-docs.resolve-schema-properties' (OnPropertyCondition)
+
+   SpringDocConfiguration#propertyCustomizingConverter:
+      Did not match:
+         - @ConditionalOnBean (types: org.springdoc.core.customizers.PropertyCustomizer; SearchStrategy: all) did not find any beans of type org.springdoc.core.customizers.PropertyCustomizer (OnBeanCondition)
+
+   SpringDocConfiguration#springdocBeanFactoryPostProcessor:
+      Did not match:
+         - AnyNestedCondition 0 matched 2 did not; NestedCondition on CacheOrGroupedOpenApiCondition.OnCacheDisabled found non-matching nested conditions @ConditionalOnProperty (springdoc.cache.disabled) did not find property 'springdoc.cache.disabled'; NestedCondition on CacheOrGroupedOpenApiCondition.OnMultipleOpenApiSupportCondition AnyNestedCondition 0 matched 2 did not; NestedCondition on MultipleOpenApiSupportCondition.OnActuatorDifferentPort @ConditionalOnProperty (springdoc.show-actuator) did not find property 'springdoc.show-actuator'; NestedCondition on MultipleOpenApiSupportCondition.OnMultipleOpenApiSupportCondition AnyNestedCondition 0 matched 3 did not; NestedCondition on MultipleOpenApiGroupsCondition.OnListGroupedOpenApiBean @ConditionalOnBean (types: org.springdoc.core.models.GroupedOpenApi; SearchStrategy: all) did not find any beans of type org.springdoc.core.models.GroupedOpenApi; NestedCondition on MultipleOpenApiGroupsCondition.OnGroupConfigProperty @ConditionalOnProperty (springdoc.group-configs[0].group) did not find property 'springdoc.group-configs[0].group'; NestedCondition on MultipleOpenApiGroupsCondition.OnGroupedOpenApiBean @ConditionalOnBean (types: org.springdoc.core.models.GroupedOpenApi; SearchStrategy: all) did not find any beans of type org.springdoc.core.models.GroupedOpenApi (CacheOrGroupedOpenApiCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.boot.context.properties.bind.BindResult' (OnClassCondition)
+
+   SpringDocConfiguration#springdocBeanFactoryPostProcessor2:
+      Did not match:
+         - @ConditionalOnMissingClass found unwanted class 'org.springframework.boot.context.properties.bind.BindResult' (OnClassCondition)
+
+   SpringDocConfiguration.SpringDocActuatorConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointProperties' (OnClassCondition)
+
+   SpringDocConfiguration.SpringDocRepositoryRestConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.rest.core.config.RepositoryRestConfiguration' (OnClassCondition)
+
+   SpringDocSortConfiguration#dataRestDelegatingMethodParameterCustomizer:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springdoc.core.customizers.DataRestDelegatingMethodParameterCustomizer; SearchStrategy: all) found beans of type 'org.springdoc.core.customizers.DataRestDelegatingMethodParameterCustomizer' dataRestDelegatingMethodParameterCustomizer (OnBeanCondition)
+
+   SpringDocWebMvcConfiguration.SpringDocWebMvcActuatorConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping' (OnClassCondition)
+
+   SwaggerConfig#springWebProvider:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springdoc.core.providers.SpringWebProvider; SearchStrategy: all) found beans of type 'org.springdoc.core.providers.SpringWebProvider' springWebProvider (OnBeanCondition)
+
+   SwaggerConfig#swaggerUiHome:
+      Did not match:
+         - @ConditionalOnProperty (springdoc.swagger-ui.use-root-path=true) did not find property 'springdoc.swagger-ui.use-root-path' (OnPropertyCondition)
+
+   SwaggerConfig.SwaggerActuatorWelcomeConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping' (OnClassCondition)
+
+   WebMvcAutoConfiguration#hiddenHttpMethodFilter:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.mvc.hiddenmethod.filter.enabled=true) did not find property 'spring.mvc.hiddenmethod.filter.enabled' (OnPropertyCondition)
+
+   WebMvcAutoConfiguration.ProblemDetailsErrorHandlingConfiguration:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.mvc.problemdetails.enabled=true) did not find property 'spring.mvc.problemdetails.enabled' (OnPropertyCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#beanNameViewResolver:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.BeanNameViewResolver; SearchStrategy: all) found beans of type 'org.springframework.web.servlet.view.BeanNameViewResolver' beanNameViewResolver (OnBeanCondition)
+
+   WebSocketServletAutoConfiguration.JettyWebSocketConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.eclipse.jetty.ee10.websocket.jakarta.server.config.JakartaWebSocketServletContainerInitializer' (OnClassCondition)
+
+   WebSocketServletAutoConfiguration.UndertowWebSocketConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.undertow.websockets.jsr.Bootstrap' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025-11-06 17:22:06.087 INFO  [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-06 17:22:06.088 INFO  [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-06 17:22:06.090 INFO  [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 2 ms
+2025-11-06 17:22:06.648 INFO  [http-nio-8080-exec-7] AbstractOpenApiResource - Init duration for springdoc-openapi is: 112 ms
+2025-11-06 17:22:53.471 INFO  [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-11-06 17:22:53.474 INFO  [Thread-7] GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-06 17:22:53.476 INFO  [tomcat-shutdown] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:22:53.478 INFO  [tomcat-shutdown] GracefulShutdown - Graceful shutdown complete
+2025-11-06 17:22:53.479 INFO  [Thread-7] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:22:53.481 INFO  [Thread-7] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 17:22:53.482 INFO  [Thread-7] HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-11-06 17:22:53.485 INFO  [Thread-7] HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-11-06 17:22:53.646 INFO  [restartedMain] McpApplication - Starting McpApplication using Java 21.0.8 with PID 41220 (/home/dryleaf/mcp-server/target/classes started by dryleaf in /home/dryleaf/mcp-server)
+2025-11-06 17:22:53.647 INFO  [restartedMain] McpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-06 17:22:53.885 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-06 17:22:53.894 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-11-06 17:22:53.999 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-06 17:22:54.001 INFO  [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:22:54.001 INFO  [restartedMain] StandardService - Starting service [Tomcat]
+2025-11-06 17:22:54.002 INFO  [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-06 17:22:54.011 INFO  [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+2025-11-06 17:22:54.012 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 361 ms
+2025-11-06 17:22:54.060 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-06 17:22:54.062 INFO  [restartedMain] RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-06 17:22:54.068 INFO  [restartedMain] SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-06 17:22:54.069 INFO  [restartedMain] HikariDataSource - HikariPool-3 - Starting...
+2025-11-06 17:22:54.095 INFO  [restartedMain] HikariPool - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@42c9a6a3
+2025-11-06 17:22:54.095 INFO  [restartedMain] HikariDataSource - HikariPool-3 - Start completed.
+2025-11-06 17:22:54.097 WARN  [restartedMain] deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-06 17:22:54.098 INFO  [restartedMain] pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-06 17:22:54.149 WARN  [restartedMain] RootClass - HHH000038: Composite-id class does not override equals(): com.spring.ai.model.EmployeeProjectId
+2025-11-06 17:22:54.149 WARN  [restartedMain] RootClass - HHH000039: Composite-id class does not override hashCode(): com.spring.ai.model.EmployeeProjectId
+2025-11-06 17:22:54.206 INFO  [restartedMain] JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-06 17:22:54.274 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 17:22:54.459 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-06 17:22:54.647 INFO  [restartedMain] McpServerAutoConfiguration - Enable tools capabilities, notification: true
+2025-11-06 17:22:54.673 INFO  [restartedMain] McpServerAutoConfiguration - Registered tools: 3
+2025-11-06 17:22:54.674 INFO  [restartedMain] McpServerAutoConfiguration - Enable resources capabilities, notification: true
+2025-11-06 17:22:54.674 INFO  [restartedMain] McpServerAutoConfiguration - Enable prompts capabilities, notification: true
+2025-11-06 17:22:54.675 INFO  [restartedMain] McpServerAutoConfiguration - Enable completions capabilities
+2025-11-06 17:22:54.704 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-06 17:22:54.714 INFO  [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:22:54.715 INFO  [restartedMain] TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-06 17:22:54.719 INFO  [restartedMain] McpApplication - Started McpApplication in 1.149 seconds (process running for 76.88)
+2025-11-06 17:22:54.720 INFO  [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-11-06 17:23:03.119 INFO  [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-11-06 17:23:03.120 INFO  [Thread-11] GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-06 17:23:03.121 INFO  [tomcat-shutdown] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:23:03.121 INFO  [tomcat-shutdown] GracefulShutdown - Graceful shutdown complete
+2025-11-06 17:23:03.122 INFO  [Thread-11] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:23:03.124 INFO  [Thread-11] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 17:23:03.124 INFO  [Thread-11] HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-11-06 17:23:03.127 INFO  [Thread-11] HikariDataSource - HikariPool-3 - Shutdown completed.
+2025-11-06 17:23:03.242 INFO  [restartedMain] McpApplication - Starting McpApplication using Java 21.0.8 with PID 41220 (/home/dryleaf/mcp-server/target/classes started by dryleaf in /home/dryleaf/mcp-server)
+2025-11-06 17:23:03.243 INFO  [restartedMain] McpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-06 17:23:03.518 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-06 17:23:03.531 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2025-11-06 17:23:03.635 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-06 17:23:03.636 INFO  [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:23:03.637 INFO  [restartedMain] StandardService - Starting service [Tomcat]
+2025-11-06 17:23:03.637 INFO  [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-06 17:23:03.646 INFO  [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+2025-11-06 17:23:03.646 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 401 ms
+2025-11-06 17:23:03.682 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-06 17:23:03.684 INFO  [restartedMain] RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-06 17:23:03.692 INFO  [restartedMain] SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-06 17:23:03.693 INFO  [restartedMain] HikariDataSource - HikariPool-4 - Starting...
+2025-11-06 17:23:03.732 INFO  [restartedMain] HikariPool - HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@6f9f1a8
+2025-11-06 17:23:03.732 INFO  [restartedMain] HikariDataSource - HikariPool-4 - Start completed.
+2025-11-06 17:23:03.736 WARN  [restartedMain] deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-06 17:23:03.736 INFO  [restartedMain] pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-06 17:23:03.772 WARN  [restartedMain] RootClass - HHH000038: Composite-id class does not override equals(): com.spring.ai.model.EmployeeProjectId
+2025-11-06 17:23:03.773 WARN  [restartedMain] RootClass - HHH000039: Composite-id class does not override hashCode(): com.spring.ai.model.EmployeeProjectId
+2025-11-06 17:23:03.827 INFO  [restartedMain] JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-06 17:23:03.874 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 17:23:03.990 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-06 17:23:04.107 INFO  [restartedMain] McpServerAutoConfiguration - Enable tools capabilities, notification: true
+2025-11-06 17:23:04.141 INFO  [restartedMain] McpServerAutoConfiguration - Registered tools: 3
+2025-11-06 17:23:04.141 INFO  [restartedMain] McpServerAutoConfiguration - Enable resources capabilities, notification: true
+2025-11-06 17:23:04.141 INFO  [restartedMain] McpServerAutoConfiguration - Enable prompts capabilities, notification: true
+2025-11-06 17:23:04.141 INFO  [restartedMain] McpServerAutoConfiguration - Enable completions capabilities
+2025-11-06 17:23:04.195 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-06 17:23:04.219 INFO  [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:23:04.236 INFO  [restartedMain] TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-06 17:23:04.261 INFO  [restartedMain] McpApplication - Started McpApplication in 1.059 seconds (process running for 86.422)
+2025-11-06 17:23:04.266 INFO  [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-11-06 17:24:33.753 INFO  [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-11-06 17:24:33.755 INFO  [Thread-15] GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-06 17:24:33.756 INFO  [tomcat-shutdown] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:24:33.757 INFO  [tomcat-shutdown] GracefulShutdown - Graceful shutdown complete
+2025-11-06 17:24:33.757 INFO  [Thread-15] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:24:33.759 INFO  [Thread-15] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 17:24:33.760 INFO  [Thread-15] HikariDataSource - HikariPool-4 - Shutdown initiated...
+2025-11-06 17:24:33.764 INFO  [Thread-15] HikariDataSource - HikariPool-4 - Shutdown completed.
+2025-11-06 17:24:33.883 INFO  [restartedMain] McpApplication - Starting McpApplication using Java 21.0.8 with PID 41220 (/home/dryleaf/mcp-server/target/classes started by dryleaf in /home/dryleaf/mcp-server)
+2025-11-06 17:24:33.884 INFO  [restartedMain] McpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-06 17:24:34.049 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-06 17:24:34.062 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2025-11-06 17:24:34.184 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-06 17:24:34.185 INFO  [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:24:34.185 INFO  [restartedMain] StandardService - Starting service [Tomcat]
+2025-11-06 17:24:34.186 INFO  [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-06 17:24:34.211 INFO  [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+2025-11-06 17:24:34.211 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 324 ms
+2025-11-06 17:24:34.292 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-06 17:24:34.296 INFO  [restartedMain] RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-06 17:24:34.323 INFO  [restartedMain] SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-06 17:24:34.330 INFO  [restartedMain] HikariDataSource - HikariPool-5 - Starting...
+2025-11-06 17:24:34.384 INFO  [restartedMain] HikariPool - HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@694f944a
+2025-11-06 17:24:34.384 INFO  [restartedMain] HikariDataSource - HikariPool-5 - Start completed.
+2025-11-06 17:24:34.390 WARN  [restartedMain] deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-06 17:24:34.393 INFO  [restartedMain] pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-06 17:24:34.448 WARN  [restartedMain] RootClass - HHH000038: Composite-id class does not override equals(): com.spring.ai.model.EmployeeProjectId
+2025-11-06 17:24:34.448 WARN  [restartedMain] RootClass - HHH000039: Composite-id class does not override hashCode(): com.spring.ai.model.EmployeeProjectId
+2025-11-06 17:24:34.509 INFO  [restartedMain] JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-06 17:24:34.586 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 17:24:34.766 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-06 17:24:34.882 INFO  [restartedMain] McpServerAutoConfiguration - Enable tools capabilities, notification: true
+2025-11-06 17:24:34.908 INFO  [restartedMain] McpServerAutoConfiguration - Registered tools: 3
+2025-11-06 17:24:34.908 INFO  [restartedMain] McpServerAutoConfiguration - Enable resources capabilities, notification: true
+2025-11-06 17:24:34.908 INFO  [restartedMain] McpServerAutoConfiguration - Enable prompts capabilities, notification: true
+2025-11-06 17:24:34.908 INFO  [restartedMain] McpServerAutoConfiguration - Enable completions capabilities
+2025-11-06 17:24:34.944 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-06 17:24:34.956 INFO  [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:24:34.958 INFO  [restartedMain] TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-06 17:24:34.963 INFO  [restartedMain] McpApplication - Started McpApplication in 1.115 seconds (process running for 177.124)
+2025-11-06 17:24:34.965 INFO  [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-11-06 17:24:51.372 INFO  [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-11-06 17:24:51.373 INFO  [Thread-19] GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-06 17:24:51.374 INFO  [tomcat-shutdown] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:24:51.376 INFO  [tomcat-shutdown] GracefulShutdown - Graceful shutdown complete
+2025-11-06 17:24:51.377 INFO  [Thread-19] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:24:51.379 INFO  [Thread-19] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 17:24:51.380 INFO  [Thread-19] HikariDataSource - HikariPool-5 - Shutdown initiated...
+2025-11-06 17:24:51.383 INFO  [Thread-19] HikariDataSource - HikariPool-5 - Shutdown completed.
+2025-11-06 17:24:51.493 INFO  [restartedMain] McpApplication - Starting McpApplication using Java 21.0.8 with PID 41220 (/home/dryleaf/mcp-server/target/classes started by dryleaf in /home/dryleaf/mcp-server)
+2025-11-06 17:24:51.494 INFO  [restartedMain] McpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-06 17:24:51.677 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-06 17:24:51.686 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-11-06 17:24:51.901 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-06 17:24:51.903 INFO  [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:24:51.904 INFO  [restartedMain] StandardService - Starting service [Tomcat]
+2025-11-06 17:24:51.904 INFO  [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-06 17:24:51.922 INFO  [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+2025-11-06 17:24:51.923 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 427 ms
+2025-11-06 17:24:52.031 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-06 17:24:52.034 INFO  [restartedMain] RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-06 17:24:52.044 INFO  [restartedMain] SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-06 17:24:52.046 INFO  [restartedMain] HikariDataSource - HikariPool-6 - Starting...
+2025-11-06 17:24:52.073 INFO  [restartedMain] HikariPool - HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@76b5d73f
+2025-11-06 17:24:52.073 INFO  [restartedMain] HikariDataSource - HikariPool-6 - Start completed.
+2025-11-06 17:24:52.079 WARN  [restartedMain] deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-06 17:24:52.081 INFO  [restartedMain] pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-06 17:24:52.123 WARN  [restartedMain] RootClass - HHH000038: Composite-id class does not override equals(): com.spring.ai.model.EmployeeProjectId
+2025-11-06 17:24:52.123 WARN  [restartedMain] RootClass - HHH000039: Composite-id class does not override hashCode(): com.spring.ai.model.EmployeeProjectId
+2025-11-06 17:24:52.185 INFO  [restartedMain] JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-06 17:24:52.235 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 17:24:52.378 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-06 17:24:52.518 INFO  [restartedMain] McpServerAutoConfiguration - Enable tools capabilities, notification: true
+2025-11-06 17:24:52.548 INFO  [restartedMain] McpServerAutoConfiguration - Registered tools: 3
+2025-11-06 17:24:52.549 INFO  [restartedMain] McpServerAutoConfiguration - Enable resources capabilities, notification: true
+2025-11-06 17:24:52.549 INFO  [restartedMain] McpServerAutoConfiguration - Enable prompts capabilities, notification: true
+2025-11-06 17:24:52.549 INFO  [restartedMain] McpServerAutoConfiguration - Enable completions capabilities
+2025-11-06 17:24:52.593 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-06 17:24:52.603 INFO  [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:24:52.605 INFO  [restartedMain] TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-06 17:24:52.611 INFO  [restartedMain] McpApplication - Started McpApplication in 1.156 seconds (process running for 194.772)
+2025-11-06 17:24:52.613 INFO  [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-11-06 17:25:02.006 INFO  [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-11-06 17:25:02.008 INFO  [Thread-23] GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-06 17:25:02.008 INFO  [tomcat-shutdown] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:25:02.009 INFO  [tomcat-shutdown] GracefulShutdown - Graceful shutdown complete
+2025-11-06 17:25:02.009 INFO  [Thread-23] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:25:02.012 INFO  [Thread-23] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 17:25:02.012 INFO  [Thread-23] HikariDataSource - HikariPool-6 - Shutdown initiated...
+2025-11-06 17:25:02.015 INFO  [Thread-23] HikariDataSource - HikariPool-6 - Shutdown completed.
+2025-11-06 17:25:02.124 INFO  [restartedMain] McpApplication - Starting McpApplication using Java 21.0.8 with PID 41220 (/home/dryleaf/mcp-server/target/classes started by dryleaf in /home/dryleaf/mcp-server)
+2025-11-06 17:25:02.124 INFO  [restartedMain] McpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-06 17:25:02.301 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-06 17:25:02.308 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2025-11-06 17:25:02.441 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-06 17:25:02.442 INFO  [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:25:02.443 INFO  [restartedMain] StandardService - Starting service [Tomcat]
+2025-11-06 17:25:02.443 INFO  [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-06 17:25:02.458 INFO  [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+2025-11-06 17:25:02.458 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 332 ms
+2025-11-06 17:25:02.517 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-06 17:25:02.521 INFO  [restartedMain] RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-06 17:25:02.535 INFO  [restartedMain] SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-06 17:25:02.536 INFO  [restartedMain] HikariDataSource - HikariPool-7 - Starting...
+2025-11-06 17:25:02.589 INFO  [restartedMain] HikariPool - HikariPool-7 - Added connection org.postgresql.jdbc.PgConnection@4e628a5
+2025-11-06 17:25:02.589 INFO  [restartedMain] HikariDataSource - HikariPool-7 - Start completed.
+2025-11-06 17:25:02.595 WARN  [restartedMain] deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-06 17:25:02.597 INFO  [restartedMain] pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-06 17:25:02.647 WARN  [restartedMain] RootClass - HHH000038: Composite-id class does not override equals(): com.spring.ai.model.EmployeeProjectId
+2025-11-06 17:25:02.647 WARN  [restartedMain] RootClass - HHH000039: Composite-id class does not override hashCode(): com.spring.ai.model.EmployeeProjectId
+2025-11-06 17:25:02.717 INFO  [restartedMain] JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-06 17:25:02.802 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 17:25:02.976 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-06 17:25:03.139 INFO  [restartedMain] McpServerAutoConfiguration - Enable tools capabilities, notification: true
+2025-11-06 17:25:03.183 INFO  [restartedMain] McpServerAutoConfiguration - Registered tools: 3
+2025-11-06 17:25:03.183 INFO  [restartedMain] McpServerAutoConfiguration - Enable resources capabilities, notification: true
+2025-11-06 17:25:03.183 INFO  [restartedMain] McpServerAutoConfiguration - Enable prompts capabilities, notification: true
+2025-11-06 17:25:03.183 INFO  [restartedMain] McpServerAutoConfiguration - Enable completions capabilities
+2025-11-06 17:25:03.267 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-06 17:25:03.285 INFO  [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:25:03.289 INFO  [restartedMain] TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-06 17:25:03.298 INFO  [restartedMain] McpApplication - Started McpApplication in 1.211 seconds (process running for 205.459)
+2025-11-06 17:25:03.301 INFO  [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-11-06 17:25:03.759 INFO  [http-nio-8080-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-06 17:25:03.759 INFO  [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-06 17:25:03.761 INFO  [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 2 ms
+2025-11-06 17:25:04.193 INFO  [http-nio-8080-exec-4] AbstractOpenApiResource - Init duration for springdoc-openapi is: 209 ms
+2025-11-06 17:25:10.456 ERROR [http-nio-8080-exec-5] [dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.spring.ai.dto.EmployeeFilter.getPage()" because "option" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.spring.ai.dto.EmployeeFilter.getPage()" because "option" is null
+	at com.spring.ai.service.EmployeeService.findAllFilteredEmployees(EmployeeService.java:46) ~[classes/:?]
+	at com.spring.ai.controller.EmployeeController.findAll(EmployeeController.java:22) ~[classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.48.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.48.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2025-11-06 17:26:32.813 INFO  [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-11-06 17:26:32.814 INFO  [Thread-27] GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-06 17:26:32.815 INFO  [tomcat-shutdown] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:26:32.815 INFO  [tomcat-shutdown] GracefulShutdown - Graceful shutdown complete
+2025-11-06 17:26:32.816 INFO  [Thread-27] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:26:32.818 INFO  [Thread-27] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 17:26:32.818 INFO  [Thread-27] HikariDataSource - HikariPool-7 - Shutdown initiated...
+2025-11-06 17:26:32.822 INFO  [Thread-27] HikariDataSource - HikariPool-7 - Shutdown completed.
+2025-11-06 17:26:33.003 INFO  [restartedMain] McpApplication - Starting McpApplication using Java 21.0.8 with PID 41220 (/home/dryleaf/mcp-server/target/classes started by dryleaf in /home/dryleaf/mcp-server)
+2025-11-06 17:26:33.004 INFO  [restartedMain] McpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-06 17:26:33.341 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-06 17:26:33.349 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2025-11-06 17:26:33.530 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-06 17:26:33.535 INFO  [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:26:33.536 INFO  [restartedMain] StandardService - Starting service [Tomcat]
+2025-11-06 17:26:33.536 INFO  [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-06 17:26:33.550 INFO  [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+2025-11-06 17:26:33.550 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 540 ms
+2025-11-06 17:26:33.591 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-06 17:26:33.594 INFO  [restartedMain] RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-06 17:26:33.600 INFO  [restartedMain] SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-06 17:26:33.601 INFO  [restartedMain] HikariDataSource - HikariPool-8 - Starting...
+2025-11-06 17:26:33.628 INFO  [restartedMain] HikariPool - HikariPool-8 - Added connection org.postgresql.jdbc.PgConnection@57d0be3c
+2025-11-06 17:26:33.629 INFO  [restartedMain] HikariDataSource - HikariPool-8 - Start completed.
+2025-11-06 17:26:33.632 WARN  [restartedMain] deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-06 17:26:33.633 INFO  [restartedMain] pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
+	Database driver: undefined/unknown
+	Database version: 16.10
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-06 17:26:33.665 WARN  [restartedMain] RootClass - HHH000038: Composite-id class does not override equals(): com.spring.ai.model.EmployeeProjectId
+2025-11-06 17:26:33.665 WARN  [restartedMain] RootClass - HHH000039: Composite-id class does not override hashCode(): com.spring.ai.model.EmployeeProjectId
+2025-11-06 17:26:33.713 INFO  [restartedMain] JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-06 17:26:33.763 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 17:26:33.881 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-06 17:26:34.070 INFO  [restartedMain] McpServerAutoConfiguration - Enable tools capabilities, notification: true
+2025-11-06 17:26:34.090 INFO  [restartedMain] McpServerAutoConfiguration - Registered tools: 3
+2025-11-06 17:26:34.090 INFO  [restartedMain] McpServerAutoConfiguration - Enable resources capabilities, notification: true
+2025-11-06 17:26:34.090 INFO  [restartedMain] McpServerAutoConfiguration - Enable prompts capabilities, notification: true
+2025-11-06 17:26:34.091 INFO  [restartedMain] McpServerAutoConfiguration - Enable completions capabilities
+2025-11-06 17:26:34.169 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-06 17:26:34.194 INFO  [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-06 17:26:34.200 INFO  [restartedMain] TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-06 17:26:34.219 INFO  [restartedMain] McpApplication - Started McpApplication in 1.273 seconds (process running for 296.38)
+2025-11-06 17:26:34.224 INFO  [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-11-06 17:26:36.634 INFO  [http-nio-8080-exec-3] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-06 17:26:36.634 INFO  [http-nio-8080-exec-3] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-06 17:26:36.635 INFO  [http-nio-8080-exec-3] DispatcherServlet - Completed initialization in 1 ms
+2025-11-06 17:26:36.637 INFO  [http-nio-8080-exec-3] EmployeeService - Finding all filtered employees with options: null
+2025-11-06 17:26:37.035 WARN  [http-nio-8080-exec-3] DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-11-06 17:26:37.036 WARN  [http-nio-8080-exec-3] DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-11-06 17:26:46.368 INFO  [http-nio-8080-exec-6] AbstractOpenApiResource - Init duration for springdoc-openapi is: 83 ms
+2025-11-06 17:26:51.091 INFO  [http-nio-8080-exec-10] EmployeeService - Finding all filtered employees with options: null
+2025-11-06 17:26:51.125 WARN  [http-nio-8080-exec-10] DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-11-06 17:26:51.126 WARN  [http-nio-8080-exec-10] DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-11-06 18:19:08.430 INFO  [SpringApplicationShutdownHook] GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-06 18:19:08.431 INFO  [tomcat-shutdown] GracefulShutdown - Graceful shutdown complete
+2025-11-06 18:19:08.434 INFO  [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 18:19:08.436 INFO  [SpringApplicationShutdownHook] HikariDataSource - HikariPool-8 - Shutdown initiated...
+2025-11-06 18:19:08.438 INFO  [SpringApplicationShutdownHook] HikariDataSource - HikariPool-8 - Shutdown completed.
