@@ -1,19 +1,13 @@
 package com.spring.ai.dto;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
-@Builder
-public class QueryRequest<T> {
+@Data
+public class QueryRequest {
 
-    private  Query<T> where;
+    private BoolQuery query;
 
-    @Builder.Default
-    private Integer limit = 5;
-    @Builder.Default
-    private Integer page =1;
-    
+    private int limit = 5;
+    private int page = 0;
+
 }

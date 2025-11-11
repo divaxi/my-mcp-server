@@ -2,12 +2,16 @@ package com.spring.ai.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.spring.ai.dto.EmployeePageRes;
+import com.spring.ai.dto.QueryRequest;
 import com.spring.ai.service.EmployeeService;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
 @RequestMapping("/employee")
@@ -20,6 +24,11 @@ public class EmployeeController {
     @GetMapping("")
     public ResponseEntity<EmployeePageRes> findAll(){
         return ResponseEntity.ok(employeeService.findAllFilteredEmployees(null));
+    }
+
+    @PostMapping("/test")
+    public ResponseEntity<QueryRequest> testEndpoint(@Valid @RequestBody QueryRequest queryRequest){
+        return ResponseEntity.ok(queryRequest);
     }
     
 }

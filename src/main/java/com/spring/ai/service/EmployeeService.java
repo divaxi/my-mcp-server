@@ -43,13 +43,11 @@ private final EmployeeRepository employeeRepository;
     @Tool(description = "Find Page of employees with filtering options")
     public EmployeePageRes findAllFilteredEmployees(@ToolParam(description = "Filtering options for employee search") EmployeeFilter option) {
 
-    Pageable pageable = PageRequest.of(0, 5);
+    Pageable pageable = PageRequest.of(0, 2);
 
     log.info("Finding all filtered employees with options: {}", option);
-    
-    Specification<Employee> spec = Specification.where(null);
 
-    Page<Employee> employeePage = employeeRepository.findAll(spec, pageable);
+    Page<Employee> employeePage = employeeRepository.findAll( pageable);
 
     return EmployeePageRes.builder()
             .employees(employeePage.getContent())
@@ -65,9 +63,5 @@ public Employee findEmployeeById( @ToolParam(description="Employee ID") Long id)
     return employeeRepository.findById(id).orElse(null);
 }
 
-@Tool(description ="Test tool method")
-public String testToolMethod( @ToolParam(description="A test parameter") EmployeeFilter option) {
-    return "Test tool method executed successfully with parameter: " + option;
-}
 
 }

@@ -1,19 +1,12 @@
 package com.spring.ai.model;
 
-import java.sql.Date;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -43,9 +36,5 @@ public class Project {
     @Column(name = "BUDGET")
     private Double budget;
 
-    // ✅ Quan hệ ngược với bảng EmployeeProject
-    @OneToMany(mappedBy = "project", cascade = CascadeType.ALL, orphanRemoval = true)
-    @JsonManagedReference
-    private List<EmployeeProject> employeeProjects = new ArrayList<>();
 }
 
