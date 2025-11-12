@@ -44,13 +44,11 @@ public class Employee {
     @Column(name = "HIRE_DATE", nullable = false)
     private LocalDate hireDate;
 
-    // ✅ Self-reference: Employee - Manager
     @ManyToOne
     @JoinColumn(name = "MANAGER_ID", referencedColumnName = "EMPLOYEE_ID",
             foreignKey = @ForeignKey(name = "FK_EMPLOYEE_MANAGER"))
     private Employee manager;
 
-    // ✅ Quan hệ tới Department
     @ManyToOne
     @JoinColumn(name = "DEPARTMENT_ID", referencedColumnName = "DEPARTMENT_ID",
             foreignKey = @ForeignKey(name = "FK_EMPLOYEE_DEPARTMENT"))
