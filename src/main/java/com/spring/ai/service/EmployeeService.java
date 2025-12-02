@@ -16,16 +16,18 @@
 package com.spring.ai.service;
 
 
+import java.time.Duration;
+
 import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.stereotype.Service;
 
-import com.spring.ai.dto.PagingList;
-import com.spring.ai.dto.Employee.EmployeeResponse;
+import com.spring.ai.dto.ResponseChunk;
 import com.spring.ai.dto.Query.QueryRequest;
 import com.spring.ai.repository.EmployeeRepositoryQueryDsl;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import reactor.core.publisher.Flux;
 
 @Service
 @RequiredArgsConstructor
@@ -35,8 +37,10 @@ public class EmployeeService {
 private final EmployeeRepositoryQueryDsl employeeRepositoryQueryDsl;
 
 @Tool(description ="QueryDSL for filtering Employee")
-public PagingList<EmployeeResponse> filterEmployeeQueryDSL( QueryRequest queryRequest) {     
-    return employeeRepositoryQueryDsl.filterEmployeeQueryDsl(queryRequest);
+public Flux<ResponseChunk> filterEmployeeQueryDSL( QueryRequest queryRequest) {     
+     return employeeRepositoryQueryDsl.filterEmployeeQueryDSL(queryRequest);
+
+
 }
 
 }

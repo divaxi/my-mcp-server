@@ -1,5 +1,6 @@
 package com.spring.ai.repository;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
@@ -9,18 +10,22 @@ import com.querydsl.core.types.dsl.Expressions;
 import com.querydsl.jpa.impl.JPAQuery;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import com.spring.ai.dto.PagingList;
+import com.spring.ai.dto.ResponseChunk;
 import com.spring.ai.dto.Employee.EmployeeResponse;
+import com.spring.ai.dto.Employee.QEmployeeResponse;
+import com.spring.ai.dto.Query.QueryRequest;
 import com.spring.ai.mapper.EmployeeFieldMap;
 import com.spring.ai.model.QEmployee;
 import com.spring.ai.model.QEmployeeProject;
-import com.spring.ai.dto.Employee.QEmployeeResponse;
-import com.spring.ai.dto.Query.QueryRequest;
 import com.spring.ai.model.QProject;
 import com.spring.ai.util.builder.QueryDSLBuilder;
 
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+import reactor.core.scheduler.Schedulers;
 
 @Repository
 @RequiredArgsConstructor
@@ -35,10 +40,20 @@ public class EmployeeRepositoryQueryDsl {
 
         @PostConstruct
         public void init() {
-                this.queryDSLBuilder = new QueryDSLBuilder(new EmployeeFieldMap(qEmployee,qEmployeeProject,qProject));
+                this.queryDSLBuilder = new QueryDSLBuilder(new EmployeeFieldMap(qEmployee, qEmployeeProject, qProject));
         }
 
-        public PagingList<EmployeeResponse> filterEmployeeQueryDsl(QueryRequest queryRequest) {
+        public Flux<ResponseChunk> filterEmployeeQueryDSL(QueryRequest req) {
+
+                Mono<ResponseChunk> start = Mono.just(new ResponseChunk("start", null))
+                                .delayElement(Duration.ofSeconds(1)); // non-blocking delay
+
+                Mono<ResponseChunk> result = Mono.fromCallable(() -> new ResponseChunk("query executed",null));
+
+                return Flux.concat(start, result);
+        }
+
+        public PagingList<EmployeeResponse> query(QueryRequest queryRequest) {
 
                 // Construct the projection DTO with string aggregation for projects
                 QEmployeeResponse employeeResponseTable = new QEmployeeResponse(
@@ -51,11 +66,12 @@ public class EmployeeRepositoryQueryDsl {
                                 qEmployee.manager.lastName,
                                 qEmployee.department.departmentName,
                                 qEmployee.salary,
-                                Expressions.stringTemplate("string_agg({0}||'%'||{1}, ',')", qProject.projectName,qEmployeeProject.role) // Aggregate
-                                                                                                             // projects
-                                                                                                             // into a
-                                                                                                             // single
-                                                                                                             // string
+                                Expressions.stringTemplate("string_agg({0}||'%'||{1}, ',')", qProject.projectName,
+                                                qEmployeeProject.role) // Aggregate
+                // projects
+                // into a
+                // single
+                // string
                 );
 
                 Predicate queryPredicate = queryDSLBuilder.create(queryRequest);
@@ -86,14 +102,16 @@ public class EmployeeRepositoryQueryDsl {
                 // Build the dynamic predicate based on QueryRequest
 
                 // Execute query and fetch results
-                List<EmployeeResponse> result = query.fetch();
+                List<EmployeeResponse> queryResult = query.fetch();
 
-                // Return paginated result including total count for paging
-                return new PagingList<>(
-                                result,
+                // paginated result including total count for paging
+                PagingList<EmployeeResponse> result = new PagingList<EmployeeResponse>(
+                                queryResult,
                                 countQuery(queryPredicate).fetchOne(), // Total count matching the predicate
                                 queryRequest.getLimit(),
                                 queryRequest.getPage());
+
+                return result;
         }
 
         /**

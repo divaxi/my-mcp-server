@@ -1,6 +1,8 @@
 package com.spring.ai.controller;
 
 
+import java.time.Duration;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -8,13 +10,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.spring.ai.dto.PagingList;
-import com.spring.ai.dto.Employee.EmployeeResponse;
+import com.spring.ai.dto.ResponseChunk;
 import com.spring.ai.dto.Query.QueryRequest;
 import com.spring.ai.service.EmployeeService;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import reactor.core.publisher.Flux;
 
 @RequestMapping("/employee")
 @RestController
@@ -23,9 +25,14 @@ public class EmployeeController {
 
     private final EmployeeService employeeService;
 
-    @PostMapping("/querydsl")
-    public ResponseEntity<PagingList<EmployeeResponse>> queryDSLFilter(@Valid @RequestBody QueryRequest queryRequest){
-        return ResponseEntity.ok(employeeService.filterEmployeeQueryDSL(queryRequest));
+    @PostMapping(path = "/querydsl",produces = "application/stream+json")
+    public Flux<ResponseChunk> queryDSLFilter(@Valid @RequestBody QueryRequest queryRequest){
+        return employeeService.filterEmployeeQueryDSL(queryRequest);
+    }
+
+    @GetMapping()
+    public Flux<ResponseChunk> test(){
+        return Flux.just(new ResponseChunk("1", null),new ResponseChunk("2", null),new ResponseChunk("3", null)).delayElements(Duration.ofSeconds(1));
     }
 
 }
