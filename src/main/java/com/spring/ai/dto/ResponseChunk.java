@@ -13,6 +13,6 @@ public class ResponseChunk {
 
     public String message;
 
-    public PagingList<EmployeeResponse> result;
+    public RCResult result;
     
 }

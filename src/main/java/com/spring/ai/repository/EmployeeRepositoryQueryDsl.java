@@ -3,6 +3,7 @@ package com.spring.ai.repository;
 import java.time.Duration;
 import java.util.List;
 
+import org.apache.tomcat.util.net.WriteBuffer.Sink;
 import org.springframework.stereotype.Repository;
 
 import com.querydsl.core.types.Predicate;
@@ -11,6 +12,7 @@ import com.querydsl.jpa.impl.JPAQuery;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import com.spring.ai.dto.PagingList;
 import com.spring.ai.dto.ResponseChunk;
+import com.spring.ai.dto.TotalCount;
 import com.spring.ai.dto.Employee.EmployeeResponse;
 import com.spring.ai.dto.Employee.QEmployeeResponse;
 import com.spring.ai.dto.Query.QueryRequest;
@@ -25,6 +27,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+import reactor.core.publisher.Sinks;
 import reactor.core.scheduler.Schedulers;
 
 @Repository
@@ -45,15 +48,33 @@ public class EmployeeRepositoryQueryDsl {
 
         public Flux<ResponseChunk> filterEmployeeQueryDSL(QueryRequest req) {
 
-                Mono<ResponseChunk> start = Mono.just(new ResponseChunk("start", null))
-                                .delayElement(Duration.ofSeconds(1)); // non-blocking delay
+                Predicate predicate = queryDSLBuilder.create(req);
 
-                Mono<ResponseChunk> result = Mono.fromCallable(() -> new ResponseChunk("query executed",null));
+                Sinks.Many<ResponseChunk> sink = Sinks.many().unicast().onBackpressureBuffer();
 
-                return Flux.concat(start, result);
+                // Start (non-blocking)
+                sink.tryEmitNext(
+                                new ResponseChunk("start", null));
+
+                // Blocking count
+                Mono.fromCallable(() -> countQuery(predicate).fetchOne())
+                                .subscribeOn(Schedulers.boundedElastic())
+                                .subscribe(result -> sink.tryEmitNext(
+                                                new ResponseChunk("total count", new TotalCount(result))));
+
+                // Blocking query
+                Mono.fromCallable(() -> query(predicate, req))
+                        .subscribeOn(Schedulers.boundedElastic())
+                        .subscribe(result -> {
+                                sink.tryEmitNext(new ResponseChunk("query executed", result));
+                                sink.tryEmitComplete(); // close stream
+                        });
+
+                // Stream return
+                return sink.asFlux();
         }
 
-        public PagingList<EmployeeResponse> query(QueryRequest queryRequest) {
+        public PagingList<EmployeeResponse> query(Predicate queryPredicate, QueryRequest queryRequest) {
 
                 // Construct the projection DTO with string aggregation for projects
                 QEmployeeResponse employeeResponseTable = new QEmployeeResponse(
@@ -74,8 +95,6 @@ public class EmployeeRepositoryQueryDsl {
                 // string
                 );
 
-                Predicate queryPredicate = queryDSLBuilder.create(queryRequest);
-                // Build the template query
                 JPAQuery<EmployeeResponse> query = queryFactory
                                 .select(employeeResponseTable)
                                 .from(qEmployee)
@@ -107,7 +126,6 @@ public class EmployeeRepositoryQueryDsl {
                 // paginated result including total count for paging
                 PagingList<EmployeeResponse> result = new PagingList<EmployeeResponse>(
                                 queryResult,
-                                countQuery(queryPredicate).fetchOne(), // Total count matching the predicate
                                 queryRequest.getLimit(),
                                 queryRequest.getPage());
 

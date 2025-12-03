@@ -7,10 +7,9 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class PagingList<T> {
+public class PagingList<T> implements RCResult {
 
     private List<T> data;
-    private long total;
     private long limit;
     private long page;
     
