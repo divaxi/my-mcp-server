@@ -6,8 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import com.spring.ai.service.EmployeeService;
-
+import com.spring.ai.Tool.EmployeeTool;
 
 @SpringBootApplication
 public class McpApplication {
@@ -17,7 +16,7 @@ public class McpApplication {
 	}
 
 	@Bean
-	public ToolCallbackProvider employeeTools(EmployeeService employeeService) {
+	public ToolCallbackProvider employeeTools(EmployeeTool employeeService) {
 		return MethodToolCallbackProvider.builder().toolObjects(employeeService).build();
 	}
 

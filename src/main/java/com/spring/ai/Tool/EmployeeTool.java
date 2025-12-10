@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.spring.ai.service;
+package com.spring.ai.Tool;
 
 import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.stereotype.Service;
@@ -29,7 +29,7 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 @RequiredArgsConstructor
 @Slf4j
-public class EmployeeService {
+public class EmployeeTool {
 
     private final EmployeeRepositoryQueryDsl employeeRepositoryQueryDsl;
 

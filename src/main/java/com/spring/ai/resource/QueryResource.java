@@ -12,22 +12,22 @@ import io.modelcontextprotocol.server.McpServerFeatures;
 import io.modelcontextprotocol.spec.McpSchema;
 
 @Configuration
-public class EmployeeResource {
+public class QueryResource {
 
     @Bean
-    public List<McpServerFeatures.SyncResourceSpecification> FieldMapResource() {
+    public List<McpServerFeatures.SyncResourceSpecification> QueryDSLResource() {
 
         List<McpSchema.Role> audience = List.of(McpSchema.Role.ASSISTANT);
         McpSchema.Annotations annotations = new McpSchema.Annotations(audience, 1.0);
 
         var fieldMapResource = new McpSchema.Resource(
-                "employees://field-map",
-                "Employee Field Map",
-                "Defines all fields that can be used in employee filtering.",
+                "query://query-dsl",
+                "QueryDSL schema",
+                "Document defines the JSON structure for sending QueryDSL-style search requests.",
                 "text/markdown",
                 annotations);
 
-        String fieldMapContent = loadMarkdown("FieldMap.md");
+        String fieldMapContent = loadMarkdown("QueryDSLSchema.md");
 
         var fieldMapresourceSpec = new McpServerFeatures.SyncResourceSpecification(
                 fieldMapResource,
@@ -46,11 +46,11 @@ public class EmployeeResource {
     private String loadMarkdown(String path) {
 
         try (InputStream inputStream = getClass().getClassLoader()
-                .getResourceAsStream(String.format("markdown/employee/%s", path))) {
+                .getResourceAsStream(String.format("markdown/%s", path))) {
 
             if (inputStream == null) {
                 throw new RuntimeException(
-                        String.format("Không tìm thấy file markdown/employee/%s", path));
+                        String.format("Không tìm thấy file markdown/%s", path));
             }
 
             return new String(inputStream.readAllBytes(), StandardCharsets.UTF_8);
