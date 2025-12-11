@@ -6,19 +6,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import com.spring.ai.service.EmployeeService;
-
-import io.swagger.v3.oas.annotations.OpenAPIDefinition;
-import io.swagger.v3.oas.annotations.info.Info;
+import com.spring.ai.Tool.EmployeeTool;
 
 @SpringBootApplication
-@OpenAPIDefinition(
-	info = @Info(
-		title = "MCP Server API",
-		version = "1.0",
-		description = "API documentation for MCP Server"
-	)
-)
 public class McpApplication {
 
 	public static void main(String[] args) {
@@ -26,7 +16,7 @@ public class McpApplication {
 	}
 
 	@Bean
-	public ToolCallbackProvider employeeTools(EmployeeService employeeService) {
+	public ToolCallbackProvider employeeTools(EmployeeTool employeeService) {
 		return MethodToolCallbackProvider.builder().toolObjects(employeeService).build();
 	}
 
