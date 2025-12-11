@@ -40,7 +40,27 @@ public class EmployeeResource {
                                             fieldMapContent)));
                 });
 
-        return List.of(fieldMapresourceSpec);
+        var executeQueryResource = new McpSchema.Resource(
+                "employees://execute-query-instructions",
+                "Instructions for Employee Query Execution",
+                "Execute QueryDSL query to filter employees.",
+                "text/markdown",
+                annotations);
+
+        String executeQueryContent = loadMarkdown("ExecuteQuery.md");
+
+        var executeQueryResourceSpec = new McpServerFeatures.SyncResourceSpecification(
+                executeQueryResource,
+                (exchange, request) -> {
+                    return new McpSchema.ReadResourceResult(
+                            List.of(
+                                    new McpSchema.TextResourceContents(
+                                            request.uri(),
+                                            "text/markdown",
+                                            executeQueryContent))); // Placeholder for actual JSON content
+                });
+
+        return List.of(fieldMapresourceSpec, executeQueryResourceSpec);
     }
 
     private String loadMarkdown(String path) {
